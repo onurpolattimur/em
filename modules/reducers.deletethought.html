@@ -68,6 +68,13 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/reducers.deletethought.payload.html" class="tsd-kind-icon">Payload</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/reducers.deletethought.thoughtupdates.html" class="tsd-kind-icon">Thought<wbr>Updates</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.deletethought.html#deletethought" class="tsd-kind-icon">delete<wbr>Thought</a></li>
@@ -82,18 +89,18 @@
 					<a name="deletethought" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> delete<wbr>Thought</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">delete<wbr>Thought<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, payload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>path<span class="tsd-signature-symbol">?: </span><a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></li>
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Thought<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>showContexts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>thoughtRanked<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/reducers/deleteThought.ts#L31">src/reducers/deleteThought.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/reducers/deleteThought.ts#L33">src/reducers/deleteThought.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Deletes a thought.</p>
+									<p>Removes a thought from a context. If it was the last thought in that context, removes it completely from the thoughtIndex. Does not update the cursor. Use deleteThoughtWithCursor or archiveThought for high-level functions.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -102,10 +109,16 @@
 									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>payload: <span class="tsd-signature-symbol">{ </span>path<span class="tsd-signature-symbol">?: </span><a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>showContexts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>thoughtRanked<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> path<span class="tsd-signature-symbol">?: </span><a href="_types_.html#path" class="tsd-signature-type">Path</a></h5>
+											<h5>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>show<wbr>Contexts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>thought<wbr>Ranked<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a></h5>
 										</li>
 									</ul>
 								</li>
@@ -131,6 +144,12 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/reducers.deletethought.payload.html" class="tsd-kind-icon">Payload</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/reducers.deletethought.thoughtupdates.html" class="tsd-kind-icon">Thought<wbr>Updates</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="reducers.deletethought.html#deletethought" class="tsd-kind-icon">delete<wbr>Thought</a>
 					</li>

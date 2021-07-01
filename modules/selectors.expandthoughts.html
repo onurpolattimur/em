@@ -72,6 +72,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#childvalue" class="tsd-kind-icon">child<wbr>Value</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="selectors.expandthoughts.html#expandthoughts" class="tsd-kind-icon">expand<wbr>Thoughts</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#expandthoughtsrecursive" class="tsd-kind-icon">expand<wbr>Thoughts<wbr>Recursive</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#istable" class="tsd-kind-icon">is<wbr>Table</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#istablecolumn1" class="tsd-kind-icon">is<wbr>Table<wbr>Column1</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#pinchildren" class="tsd-kind-icon">pin<wbr>Children</a></li>
@@ -93,7 +94,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/selectors/expandThoughts.ts#L9">src/selectors/expandThoughts.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/expandThoughts.ts#L8">src/selectors/expandThoughts.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -118,19 +119,19 @@
 					<a name="expandthoughts" class="tsd-anchor"></a>
 					<h3>expand<wbr>Thoughts</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">expand<wbr>Thoughts<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, path<span class="tsd-signature-symbol">: </span><a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>depth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">expand<wbr>Thoughts&lt;B&gt;<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, path<span class="tsd-signature-symbol">: </span><a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>depth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>returnContexts<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">B</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">Context</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">Path</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">expand<wbr>Thoughts<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, path<span class="tsd-signature-symbol">: </span><a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">expand<wbr>Thoughts&lt;B&gt;<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, path<span class="tsd-signature-symbol">: </span><a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>returnContexts<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">B</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">Context</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">Path</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/selectors/expandThoughts.ts#L40">src/selectors/expandThoughts.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/expandThoughts.ts#L39">src/selectors/expandThoughts.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns an expansion map marking all contexts that should be expanded.</p>
+									<p>Returns an expansion map marking all contexts that should be expanded when for the given path.</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
@@ -152,21 +153,18 @@
 								<li>
 									<h5>path: <a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>depth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
-								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_types_.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/selectors/expandThoughts.ts#L41">src/selectors/expandThoughts.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/expandThoughts.ts#L40">src/selectors/expandThoughts.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns an expansion map marking all contexts that should be expanded.</p>
+									<p>Returns an expansion map marking all contexts that should be expanded when for the given path.</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
@@ -195,10 +193,55 @@
 									<h5>path: <a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>depth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>returnContexts<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">B</a><span class="tsd-signature-symbol"> }</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>returnContexts<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">B</a><span class="tsd-signature-symbol"> }</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_types_.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">Context</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">Path</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="expandthoughtsrecursive" class="tsd-anchor"></a>
+					<h3>expand<wbr>Thoughts<wbr>Recursive</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">expand<wbr>Thoughts<wbr>Recursive<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, expansionBasePath<span class="tsd-signature-symbol">: </span><a href="_types_.html#path" class="tsd-signature-type">Path</a>, path<span class="tsd-signature-symbol">: </span><a href="_types_.html#path" class="tsd-signature-type">Path</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>returnContexts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> | </span><a href="_types_.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/expandThoughts.ts#L68">src/selectors/expandThoughts.ts:68</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Recursively generate expansion map based by checking if the children of the current path should expand based on the given expansion path.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
+								</li>
+								<li>
+									<h5>expansionBasePath: <a href="_types_.html#path" class="tsd-signature-type">Path</a></h5>
+								</li>
+								<li>
+									<h5>path: <a href="_types_.html#path" class="tsd-signature-type">Path</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Current path.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>returnContexts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>return<wbr>Contexts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> | </span><a href="_types_.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -212,7 +255,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/selectors/expandThoughts.ts#L14">src/selectors/expandThoughts.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/expandThoughts.ts#L13">src/selectors/expandThoughts.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -243,7 +286,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/selectors/expandThoughts.ts#L22">src/selectors/expandThoughts.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/expandThoughts.ts#L21">src/selectors/expandThoughts.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -274,7 +317,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/selectors/expandThoughts.ts#L18">src/selectors/expandThoughts.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/expandThoughts.ts#L17">src/selectors/expandThoughts.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -305,7 +348,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/selectors/expandThoughts.ts#L33">src/selectors/expandThoughts.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/expandThoughts.ts#L32">src/selectors/expandThoughts.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -349,6 +392,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="selectors.expandthoughts.html#expandthoughts" class="tsd-kind-icon">expand<wbr>Thoughts</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="selectors.expandthoughts.html#expandthoughtsrecursive" class="tsd-kind-icon">expand<wbr>Thoughts<wbr>Recursive</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="selectors.expandthoughts.html#istable" class="tsd-kind-icon">is<wbr>Table</a>

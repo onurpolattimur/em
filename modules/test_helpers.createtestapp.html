@@ -72,6 +72,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="test_helpers.createtestapp.html#app" class="tsd-kind-icon">App</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="test_helpers.createtestapp.html#cleanup" class="tsd-kind-icon">cleanup</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="test_helpers.createtestapp.html#faketimer" class="tsd-kind-icon">fake<wbr>Timer</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -79,6 +80,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="test_helpers.createtestapp.html#cleanuptestapp" class="tsd-kind-icon">cleanup<wbr>Test<wbr>App</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="test_helpers.createtestapp.html#createtestapp" class="tsd-kind-icon">create<wbr>Test<wbr>App</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="test_helpers.createtestapp.html#refreshtestapp" class="tsd-kind-icon">refresh<wbr>Test<wbr>App</a></li>
 							</ul>
 						</section>
 					</div>
@@ -89,10 +91,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="app" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> App</h3>
-					<div class="tsd-signature tsd-kind-icon">App<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ForwardRefExoticComponent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RefAttributes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = React.forwardRef(() &#x3D;&gt;&lt;Provider store&#x3D;{store}&gt;&lt;ErrorBoundaryContainer&gt;&lt;TouchMonitor&gt;&lt;AppComponent /&gt;&lt;/TouchMonitor&gt;&lt;/ErrorBoundaryContainer&gt;&lt;/Provider&gt;)</span></div>
+					<div class="tsd-signature tsd-kind-icon">App<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ForwardRefExoticComponent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RefAttributes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = React.forwardRef(() &#x3D;&gt; (&lt;Provider store&#x3D;{store}&gt;&lt;ErrorBoundaryContainer&gt;&lt;TouchMonitor&gt;&lt;AppComponent /&gt;&lt;/TouchMonitor&gt;&lt;/ErrorBoundaryContainer&gt;&lt;/Provider&gt;))</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/test-helpers/createTestApp.tsx#L22">src/test-helpers/createTestApp.tsx:22</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/test-helpers/createTestApp.tsx#L24">src/test-helpers/createTestApp.tsx:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -107,9 +109,33 @@
 					<div class="tsd-signature tsd-kind-icon">cleanup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Await</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">initialize</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">"cleanup"</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/test-helpers/createTestApp.tsx#L33">src/test-helpers/createTestApp.tsx:33</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/test-helpers/createTestApp.tsx#L35">src/test-helpers/createTestApp.tsx:35</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="faketimer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> fake<wbr>Timer</h3>
+					<div class="tsd-signature tsd-kind-icon">fake<wbr>Timer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>runAllAsync<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">runAllAsync</span><span class="tsd-signature-symbol">; </span>useFakeTimer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useFakeTimer</span><span class="tsd-signature-symbol">; </span>useRealTimer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useRealTimer</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = testTimer()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/test-helpers/createTestApp.tsx#L37">src/test-helpers/createTestApp.tsx:37</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>run<wbr>All<wbr>Async<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">runAllAsync</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>use<wbr>Fake<wbr>Timer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useFakeTimer</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>use<wbr>Real<wbr>Timer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useRealTimer</span></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -124,7 +150,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/test-helpers/createTestApp.tsx#L77">src/test-helpers/createTestApp.tsx:77</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/test-helpers/createTestApp.tsx#L93">src/test-helpers/createTestApp.tsx:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -146,7 +172,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/test-helpers/createTestApp.tsx#L36">src/test-helpers/createTestApp.tsx:36</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/test-helpers/createTestApp.tsx#L42">src/test-helpers/createTestApp.tsx:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -158,6 +184,28 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="refreshtestapp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> refresh<wbr>Test<wbr>App</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">refresh<wbr>Test<wbr>App<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/test-helpers/createTestApp.tsx#L114">src/test-helpers/createTestApp.tsx:114</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Refresh the test app.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -166,6 +214,12 @@
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="test_helpers.html">test-<wbr>helpers</a>
 						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.checkdataintegrity.html">check<wbr>Data<wbr>Integrity</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.constants.html">constants</a>
+							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="test_helpers.createmockstore.html">create<wbr>Mock<wbr>Store</a>
 							</li>
@@ -185,10 +239,22 @@
 								<a href="test_helpers.dataprovidertest-1.html">data<wbr>Provider<wbr>Test</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.delay.html">delay</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="test_helpers.executeshortcut.html">execute<wbr>Shortcut</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.getlexemefromdb.html">get<wbr>Lexeme<wbr>FromDB</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.importtocontext.html">import<wbr>ToContext</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="test_helpers.mock_debounce_throttle.html">mock-<wbr>debounce-<wbr>throttle</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.partialwithref.html">partial<wbr>With<wbr>Ref</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="test_helpers.setcursorfirstmatch.html">set<wbr>Cursor<wbr>First<wbr>Match</a>
@@ -211,11 +277,17 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="test_helpers.createtestapp.html#cleanup" class="tsd-kind-icon">cleanup</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="test_helpers.createtestapp.html#faketimer" class="tsd-kind-icon">fake<wbr>Timer</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="test_helpers.createtestapp.html#cleanuptestapp" class="tsd-kind-icon">cleanup<wbr>Test<wbr>App</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="test_helpers.createtestapp.html#createtestapp" class="tsd-kind-icon">create<wbr>Test<wbr>App</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="test_helpers.createtestapp.html#refreshtestapp" class="tsd-kind-icon">refresh<wbr>Test<wbr>App</a>
 					</li>
 				</ul>
 			</nav>

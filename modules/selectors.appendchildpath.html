@@ -68,45 +68,69 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="selectors.appendchildpath.html#appendchildpath" class="tsd-kind-icon">append<wbr>Child<wbr>Path</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.appendchildpath.html#appendchildpath" class="tsd-kind-icon">append<wbr>Child<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.appendchildpath.html#resolve" class="tsd-kind-icon">resolve</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="appendchildpath" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> append<wbr>Child<wbr>Path</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">append<wbr>Child<wbr>Path<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, childPath<span class="tsd-signature-symbol">: </span><a href="_types_.html#simplepath" class="tsd-signature-type">SimplePath</a>, parentThoughtsResolved<span class="tsd-signature-symbol">?: </span><a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#path" class="tsd-signature-type">Path</a></li>
+					<div class="tsd-signature tsd-kind-icon">append<wbr>Child<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">MemoizedFunction</span><span class="tsd-signature-symbol"> = _.memoize((state: State, childPath: SimplePath, parentThoughtsResolved?: Path): Path &#x3D;&gt; {if (!parentThoughtsResolved) return childPath as Pathconst isParentContextViewActive &#x3D; isContextViewActive(state, pathToContext(parentThoughtsResolved))return unroot([...parentThoughtsResolved,head(isParentContextViewActive ? parentOf(childPath) : childPath)])}, resolve)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/appendChildPath.ts#L32">src/selectors/appendChildPath.ts:32</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Appends the head of a child SimplePath to a parent Path. In case of parent with active context view it appends head of the parent of the childPath.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>example</dt>
+							<dd><p>// Note: Examples use Contexts only for clarity; the function actually takes Paths.</p>
+								<p>// returns [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;]
+								appendChildPath(state, [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;], [&#39;a&#39;, &#39;b&#39; , &#39;c&#39;])</p>
+								<p>// returns [&#39;m&#39;, &#39;n&#39;, &#39;o&#39;, &#39;p&#39;, &#39;q&#39;]
+								appendChildPath(state, [&#39;a&#39;, &#39;b&#39;, &#39;p&#39;, &#39;o&#39;, &#39;q&#39;], [&#39;m&#39;, &#39;n&#39;, &#39;o&#39;, &#39;p&#39;])</p>
+								<p>// Note: [&#39;i&#39;, &#39;j&#39;, &#39;k&#39;] has active context view
+									// returns [i&#39;, &#39;j&#39;, &#39;k&#39;, &#39;t&#39;]
+								appendChildPath(state, [&#39;r&#39;, &#39;s&#39;, &#39;t&#39;, &#39;k&#39;], [&#39;i&#39;, &#39;j&#39;, &#39;k&#39;])</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="resolve" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> resolve</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">resolve<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, childPath<span class="tsd-signature-symbol">: </span><a href="_types_.html#simplepath" class="tsd-signature-type">SimplePath</a>, parentThoughtsResolved<span class="tsd-signature-symbol">?: </span><a href="_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/selectors/appendChildPath.ts#L21">src/selectors/appendChildPath.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/appendChildPath.ts#L9">src/selectors/appendChildPath.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Appends the head of a child SimplePath to a parent Path. In case of parent with active context view it appends head of the parent of the childPath.</p>
+									<p>A memoize resolver that handles child and simplePath value equality for getChildPath.</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><p>// Note: Examples use Contexts only for clarity; the function actually takes Paths.</p>
-										<p>// returns [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;]
-										appendChildPath(state, [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;], [&#39;a&#39;, &#39;b&#39; , &#39;c&#39;])</p>
-										<p>// returns [&#39;m&#39;, &#39;n&#39;, &#39;o&#39;, &#39;p&#39;, &#39;q&#39;]
-										appendChildPath(state, [&#39;a&#39;, &#39;b&#39;, &#39;p&#39;, &#39;o&#39;, &#39;q&#39;], [&#39;m&#39;, &#39;n&#39;, &#39;o&#39;, &#39;p&#39;])</p>
-										<p>// Note: [&#39;i&#39;, &#39;j&#39;, &#39;k&#39;] has active context view
-											// returns [i&#39;, &#39;j&#39;, &#39;k&#39;, &#39;t&#39;]
-										appendChildPath(state, [&#39;r&#39;, &#39;s&#39;, &#39;t&#39;, &#39;k&#39;], [&#39;i&#39;, &#39;j&#39;, &#39;k&#39;])</p>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -120,7 +144,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parentThoughtsResolved: <a href="_types_.html#path" class="tsd-signature-type">Path</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types_.html#path" class="tsd-signature-type">Path</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -141,8 +165,11 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module">
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="selectors.appendchildpath.html#appendchildpath" class="tsd-kind-icon">append<wbr>Child<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="selectors.appendchildpath.html#resolve" class="tsd-kind-icon">resolve</a>
 					</li>
 				</ul>
 			</nav>

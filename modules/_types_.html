@@ -95,6 +95,8 @@
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_.ref.html" class="tsd-kind-icon">Ref</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_.shortcut.html" class="tsd-kind-icon">Shortcut</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter"><a href="../interfaces/_types_.snapshot.html" class="tsd-kind-icon">Snapshot</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_.sortpreference.html" class="tsd-kind-icon">Sort<wbr>Preference</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_.splitresult.html" class="tsd-kind-icon">Split<wbr>Result</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_.thoughtcontext.html" class="tsd-kind-icon">Thought<wbr>Context</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_.thoughtindices.html" class="tsd-kind-icon">Thought<wbr>Indices</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_.thoughtupdates.html" class="tsd-kind-icon">Thought<wbr>Updates</a></li>
@@ -117,10 +119,12 @@
 								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="_types_.html#flavor" class="tsd-kind-icon">Flavor</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#gesturepath" class="tsd-kind-icon">Gesture<wbr>Path</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="_types_.html#index" class="tsd-kind-icon">Index</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#lazyenv" class="tsd-kind-icon">Lazy<wbr>Env</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#mimetype" class="tsd-kind-icon">Mime<wbr>Type</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#patch" class="tsd-kind-icon">Patch</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#path" class="tsd-kind-icon">Path</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#simplepath" class="tsd-kind-icon">Simple<wbr>Path</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#sortdirection" class="tsd-kind-icon">Sort<wbr>Direction</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#thoughtcaches" class="tsd-kind-icon">Thought<wbr>Caches</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#thoughthash" class="tsd-kind-icon">Thought<wbr>Hash</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#thoughtsinterface" class="tsd-kind-icon">Thoughts<wbr>Interface</a></li>
@@ -147,7 +151,7 @@
 					<div class="tsd-signature tsd-kind-icon">Alert<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>alertType<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>showCloseLink<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L245">src/types.ts:245</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L263">src/types.ts:263</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -157,7 +161,7 @@
 					<div class="tsd-signature tsd-kind-icon">Await&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">infer </span> U<span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L289">src/types.ts:289</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L307">src/types.ts:307</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -173,7 +177,7 @@
 					<div class="tsd-signature tsd-kind-icon">Comparator<wbr>Function&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L80">src/types.ts:80</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L89">src/types.ts:89</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -218,7 +222,7 @@
 					<div class="tsd-signature tsd-kind-icon">Comparator<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L77">src/types.ts:77</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L86">src/types.ts:86</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -233,7 +237,7 @@
 					<div class="tsd-signature tsd-kind-icon">Connected&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>dispatch<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.dispatch.html" class="tsd-signature-type">Dispatch</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L190">src/types.ts:190</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L206">src/types.ts:206</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -254,7 +258,7 @@
 					<div class="tsd-signature tsd-kind-icon">Context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L138">src/types.ts:138</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L146">src/types.ts:146</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -269,7 +273,7 @@
 					<div class="tsd-signature tsd-kind-icon">Context<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types_.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ContextHash"</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L259">src/types.ts:259</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L277">src/types.ts:277</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -279,7 +283,7 @@
 					<div class="tsd-signature tsd-kind-icon">Direction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"u"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"d"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"l"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"r"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L235">src/types.ts:235</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L256">src/types.ts:256</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -289,7 +293,7 @@
 					<div class="tsd-signature tsd-kind-icon">Direction<wbr>Map&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><a href="_types_.html#direction" class="tsd-signature-type">Direction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L237">src/types.ts:237</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L258">src/types.ts:258</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -326,7 +330,7 @@
 					<div class="tsd-signature tsd-kind-icon">Flavor&lt;T, FlavorT&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types_.flavoring.html" class="tsd-signature-type">Flavoring</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">FlavorT</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L72">src/types.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L79">src/types.ts:79</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -342,10 +346,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="gesturepath" class="tsd-anchor"></a>
 					<h3>Gesture<wbr>Path</h3>
-					<div class="tsd-signature tsd-kind-icon">Gesture<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">"r"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"d"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"l"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"u"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>map<span class="tsd-signature-symbol">: </span><a href="_types_.html#directionmap" class="tsd-signature-type">DirectionMap</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_.html#direction" class="tsd-signature-type">Direction</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>split<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types_.html#direction" class="tsd-signature-type">Direction</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span></div>
+					<div class="tsd-signature tsd-kind-icon">Gesture<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="_types_.html#direction" class="tsd-signature-type">Direction</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L240">src/types.ts:240</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L261">src/types.ts:261</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -355,7 +359,7 @@
 					<div class="tsd-signature tsd-kind-icon">Index&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L86">src/types.ts:86</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L95">src/types.ts:95</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -379,12 +383,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="lazyenv" class="tsd-anchor"></a>
+					<h3>Lazy<wbr>Env</h3>
+					<div class="tsd-signature tsd-kind-icon">Lazy<wbr>Env<span class="tsd-signature-symbol">:</span> <a href="_types_.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L332">src/types.ts:332</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An environment for evaluating expressions defined by lazily loaded Contexts.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="mimetype" class="tsd-anchor"></a>
 					<h3>Mime<wbr>Type</h3>
 					<div class="tsd-signature tsd-kind-icon">Mime<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"text/plain"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"text/html"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L83">src/types.ts:83</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L92">src/types.ts:92</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -399,7 +418,7 @@
 					<div class="tsd-signature tsd-kind-icon">Patch<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_.extendedoperation.html" class="tsd-signature-type">ExtendedOperation</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L257">src/types.ts:257</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L275">src/types.ts:275</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -409,7 +428,7 @@
 					<div class="tsd-signature tsd-kind-icon">Path<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L132">src/types.ts:132</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L140">src/types.ts:140</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -424,7 +443,7 @@
 					<div class="tsd-signature tsd-kind-icon">Simple<wbr>Path<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types_.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"SimplePath"</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L135">src/types.ts:135</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L143">src/types.ts:143</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -434,12 +453,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="sortdirection" class="tsd-anchor"></a>
+					<h3>Sort<wbr>Direction</h3>
+					<div class="tsd-signature tsd-kind-icon">Sort<wbr>Direction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Asc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Desc"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L163">src/types.ts:163</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="thoughtcaches" class="tsd-anchor"></a>
 					<h3>Thought<wbr>Caches</h3>
 					<div class="tsd-signature tsd-kind-icon">Thought<wbr>Caches<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>contextCache<span class="tsd-signature-symbol">: </span><a href="_types_.html#contexthash" class="tsd-signature-type">ContextHash</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>thoughtCache<span class="tsd-signature-symbol">: </span><a href="_types_.html#thoughthash" class="tsd-signature-type">ThoughtHash</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L271">src/types.ts:271</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L289">src/types.ts:289</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -460,7 +489,7 @@
 					<div class="tsd-signature tsd-kind-icon">Thought<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types_.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtHash"</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L260">src/types.ts:260</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L278">src/types.ts:278</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -470,7 +499,7 @@
 					<div class="tsd-signature tsd-kind-icon">Thoughts<wbr>Interface<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_.thoughtindices.html" class="tsd-signature-type">ThoughtIndices</a><span class="tsd-signature-symbol"> &amp; </span><a href="_types_.html#thoughtcaches" class="tsd-signature-type">ThoughtCaches</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L286">src/types.ts:286</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L304">src/types.ts:304</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -480,7 +509,7 @@
 					<div class="tsd-signature tsd-kind-icon">Thunk&lt;R&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dispatch<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.dispatch.html" class="tsd-signature-type">Dispatch</a>, getState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">R</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L184">src/types.ts:184</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L200">src/types.ts:200</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -537,7 +566,7 @@
 					<div class="tsd-signature tsd-kind-icon">Timer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">setTimeout</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L291">src/types.ts:291</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L309">src/types.ts:309</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -547,7 +576,7 @@
 					<div class="tsd-signature tsd-kind-icon">Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types_.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"Timestamp"</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L97">src/types.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L105">src/types.ts:105</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -562,7 +591,7 @@
 					<div class="tsd-signature tsd-kind-icon">Tutorial<wbr>Choice<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L187">src/types.ts:187</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L203">src/types.ts:203</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -580,7 +609,7 @@
 					<div class="tsd-signature tsd-kind-icon">Brand<wbr>Symbol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">symbol</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L73">src/types.ts:73</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L80">src/types.ts:80</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -589,27 +618,6 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class=" tsd-kind-module">
-						<a href="_browser_.html">&quot;browser&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_constants_.html">&quot;constants&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_globals_.html">&quot;globals&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_initialize_.html">&quot;initialize&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_setuptests_.html">&quot;setup<wbr>Tests&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_shortcuts_.html">&quot;shortcuts&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_store_.html">&quot;store&quot;</a>
-					</li>
 					<li class="current tsd-kind-module">
 						<a href="_types_.html">&quot;types&quot;</a>
 						<ul>
@@ -620,48 +628,6 @@
 								<a href="_types_.__global.html">__global</a>
 							</li>
 						</ul>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="action_creators.html">action-<wbr>creators</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="components.html">components</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="data_providers.html">data-<wbr>providers</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="hooks.html">hooks</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="migrations.html">migrations</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="reducers.html">reducers</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="redux_enhancers.html">redux-<wbr>enhancers</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="redux_middleware.html">redux-<wbr>middleware</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="root.html">root</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="search.html">search</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="selectors.html">selectors</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="shortcuts.html">shortcuts</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="test_helpers.html">test-<wbr>helpers</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="util.html">util</a>
 					</li>
 				</ul>
 			</nav>
@@ -716,6 +682,12 @@
 						<a href="../interfaces/_types_.snapshot.html" class="tsd-kind-icon">Snapshot</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_types_.sortpreference.html" class="tsd-kind-icon">Sort<wbr>Preference</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_types_.splitresult.html" class="tsd-kind-icon">Split<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_types_.thoughtcontext.html" class="tsd-kind-icon">Thought<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
@@ -767,6 +739,9 @@
 						<a href="_types_.html#index" class="tsd-kind-icon">Index</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="_types_.html#lazyenv" class="tsd-kind-icon">Lazy<wbr>Env</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="_types_.html#mimetype" class="tsd-kind-icon">Mime<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
@@ -777,6 +752,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="_types_.html#simplepath" class="tsd-kind-icon">Simple<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="_types_.html#sortdirection" class="tsd-kind-icon">Sort<wbr>Direction</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="_types_.html#thoughtcaches" class="tsd-kind-icon">Thought<wbr>Caches</a>

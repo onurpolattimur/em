@@ -78,6 +78,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.exportcontext.html#exportcontext" class="tsd-kind-icon">export<wbr>Context</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.exportcontext.html#replacetitle" class="tsd-kind-icon">replace<wbr>Title</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.exportcontext.html#striphtmltag" class="tsd-kind-icon">stripHTMLTag</a></li>
 							</ul>
 						</section>
 					</div>
@@ -89,13 +90,13 @@
 					<a name="exportcontext" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> export<wbr>Context</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">export<wbr>Context<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types_.html#context" class="tsd-signature-type">Context</a>, format<span class="tsd-signature-symbol">?: </span><a href="_types_.html#mimetype" class="tsd-signature-type">MimeType</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>excludeMeta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>excludeSrc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>indent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">export<wbr>Context<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types_.html#context" class="tsd-signature-type">Context</a>, format<span class="tsd-signature-symbol">?: </span><a href="_types_.html#mimetype" class="tsd-signature-type">MimeType</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>depth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>excludeArchived<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>excludeMeta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>excludeSrc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>indent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/selectors/exportContext.ts#L28">src/selectors/exportContext.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/exportContext.ts#L37">src/selectors/exportContext.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -115,8 +116,14 @@
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> format: <a href="_types_.html#mimetype" class="tsd-signature-type">MimeType</a><span class="tsd-signature-symbol"> = &quot;text/html&quot;</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>excludeMeta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>excludeSrc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>indent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>depth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>excludeArchived<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>excludeMeta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>excludeSrc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>indent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
 									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>depth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>exclude<wbr>Archived<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+										</li>
 										<li class="tsd-parameter">
 											<h5>exclude<wbr>Meta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
 										</li>
@@ -146,7 +153,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/selectors/exportContext.ts#L8">src/selectors/exportContext.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/exportContext.ts#L8">src/selectors/exportContext.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -164,6 +171,34 @@
 								</li>
 								<li>
 									<h5>format: <a href="_types_.html#mimetype" class="tsd-signature-type">MimeType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="striphtmltag" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> stripHTMLTag</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">stripHTMLTag<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/exportContext.ts#L16">src/selectors/exportContext.ts:16</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Strips out HTML tage when exporting as plain text.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -195,6 +230,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="selectors.exportcontext.html#replacetitle" class="tsd-kind-icon">replace<wbr>Title</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="selectors.exportcontext.html#striphtmltag" class="tsd-kind-icon">stripHTMLTag</a>
 					</li>
 				</ul>
 			</nav>

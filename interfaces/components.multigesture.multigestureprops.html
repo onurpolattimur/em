@@ -85,6 +85,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="components.multigesture.multigestureprops.html#ongesture" class="tsd-kind-icon">on<wbr>Gesture</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="components.multigesture.multigestureprops.html#onstart" class="tsd-kind-icon">on<wbr>Start</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="components.multigesture.multigestureprops.html#scrollthreshold" class="tsd-kind-icon">scroll<wbr>Threshold</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="components.multigesture.multigestureprops.html#shouldcancelgesture" class="tsd-kind-icon">should<wbr>Cancel<wbr>Gesture</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="components.multigesture.multigestureprops.html#threshold" class="tsd-kind-icon">threshold</a></li>
 							</ul>
 						</section>
@@ -99,7 +100,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>sequence<span class="tsd-signature-symbol">: </span><a href="../modules/_types_.html#gesturepath" class="tsd-signature-type">GesturePath</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GestureResponderEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/MultiGesture.tsx#L25">src/components/MultiGesture.tsx:25</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/MultiGesture.tsx#L25">src/components/MultiGesture.tsx:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -109,7 +110,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Gesture<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>g<span class="tsd-signature-symbol">: </span><a href="../modules/_types_.html#direction" class="tsd-signature-type">Direction</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, sequence<span class="tsd-signature-symbol">: </span><a href="../modules/_types_.html#gesturepath" class="tsd-signature-type">GesturePath</a>, e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GestureResponderEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/MultiGesture.tsx#L24">src/components/MultiGesture.tsx:24</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/MultiGesture.tsx#L24">src/components/MultiGesture.tsx:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -119,7 +120,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/MultiGesture.tsx#L26">src/components/MultiGesture.tsx:26</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/MultiGesture.tsx#L26">src/components/MultiGesture.tsx:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -129,7 +130,17 @@
 					<div class="tsd-signature tsd-kind-icon">scroll<wbr>Threshold<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/MultiGesture.tsx#L27">src/components/MultiGesture.tsx:27</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/MultiGesture.tsx#L28">src/components/MultiGesture.tsx:28</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="shouldcancelgesture" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> should<wbr>Cancel<wbr>Gesture</h3>
+					<div class="tsd-signature tsd-kind-icon">should<wbr>Cancel<wbr>Gesture<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/MultiGesture.tsx#L27">src/components/MultiGesture.tsx:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -139,7 +150,7 @@
 					<div class="tsd-signature tsd-kind-icon">threshold<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/MultiGesture.tsx#L28">src/components/MultiGesture.tsx:28</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/MultiGesture.tsx#L29">src/components/MultiGesture.tsx:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -184,6 +195,9 @@
 								<a href="components.multigesture.multigestureprops.html#scrollthreshold" class="tsd-kind-icon">scroll<wbr>Threshold</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="components.multigesture.multigestureprops.html#shouldcancelgesture" class="tsd-kind-icon">should<wbr>Cancel<wbr>Gesture</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="components.multigesture.multigestureprops.html#threshold" class="tsd-kind-icon">threshold</a>
 							</li>
 						</ul>
@@ -201,9 +215,6 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/components.multigesture.html#gesture" class="tsd-kind-icon">gesture</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/components.multigesture.html#notextselected" class="tsd-kind-icon">no<wbr>Text<wbr>Selected</a>
 					</li>
 				</ul>
 			</nav>

@@ -98,10 +98,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="auth" class="tsd-anchor"></a>
 					<h3>auth</h3>
-					<div class="tsd-signature tsd-kind-icon">auth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>currentUser<span class="tsd-signature-symbol">: </span><a href="_types_.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">; </span>onAuthStateChanged<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>user<span class="tsd-signature-symbol">: </span><a href="_types_.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>signInWithRedirect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>signOut<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>GoogleAuthProvider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">auth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>createUserWithEmailAndPassword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>user<span class="tsd-signature-symbol">: </span><a href="_types_.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>currentUser<span class="tsd-signature-symbol">: </span><a href="_types_.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">; </span>onAuthStateChanged<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>user<span class="tsd-signature-symbol">: </span><a href="_types_.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>sendPasswordResetEmail<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, passwordResetOptions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>signInWithEmailAndPassword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>user<span class="tsd-signature-symbol">: </span><a href="_types_.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>signInWithRedirect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>signOut<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>GoogleAuthProvider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L32">src/types.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L34">src/types.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -111,7 +111,7 @@
 					<div class="tsd-signature tsd-kind-icon">database<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>ref<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types_.ref.html" class="tsd-signature-type">Ref</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L38">src/types.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L43">src/types.ts:43</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -159,7 +159,7 @@
 					<div class="tsd-signature tsd-kind-icon">initialize<wbr>App<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../modules/_types_.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/types.ts#L41">src/types.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/types.ts#L46">src/types.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -189,27 +189,6 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_browser_.html">&quot;browser&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_constants_.html">&quot;constants&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_globals_.html">&quot;globals&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_initialize_.html">&quot;initialize&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_setuptests_.html">&quot;setup<wbr>Tests&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_shortcuts_.html">&quot;shortcuts&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_store_.html">&quot;store&quot;</a>
-					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/_types_.html">&quot;types&quot;</a>
 						<ul>
@@ -220,48 +199,6 @@
 								<a href="../modules/_types_.__global.html">__global</a>
 							</li>
 						</ul>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/action_creators.html">action-<wbr>creators</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/components.html">components</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/data_providers.html">data-<wbr>providers</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/hooks.html">hooks</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/migrations.html">migrations</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/reducers.html">reducers</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/redux_enhancers.html">redux-<wbr>enhancers</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/redux_middleware.html">redux-<wbr>middleware</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/root.html">root</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/search.html">search</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/selectors.html">selectors</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/shortcuts.html">shortcuts</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/test_helpers.html">test-<wbr>helpers</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/util.html">util</a>
 					</li>
 				</ul>
 			</nav>

@@ -87,10 +87,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="themelocal" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> theme<wbr>Local</h3>
-					<div class="tsd-signature tsd-kind-icon">theme<wbr>Local<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = typeof localStorage !&#x3D;&#x3D; &#x27;undefined&#x27; &amp;&amp; localStorage[&#x27;Settings/Theme&#x27;] || &#x27;Dark&#x27;</span></div>
+					<div class="tsd-signature tsd-kind-icon">theme<wbr>Local<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = (typeof storage !&#x3D;&#x3D; &#x27;undefined&#x27; &amp;&amp; storage.getItem(&#x27;Settings/Theme&#x27;)) || &#x27;Dark&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/selectors/theme.ts#L6">src/selectors/theme.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/theme.ts#L7">src/selectors/theme.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -101,13 +101,13 @@
 					<a name="theme" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> theme</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">theme<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">theme<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/selectors/theme.ts#L9">src/selectors/theme.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/theme.ts#L10">src/selectors/theme.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -121,7 +121,7 @@
 									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>

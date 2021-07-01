@@ -70,6 +70,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.getsortpreference.html#getsortdirection" class="tsd-kind-icon">get<wbr>Sort<wbr>Direction</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getsortpreference.html#getsortpreference" class="tsd-kind-icon">get<wbr>Sort<wbr>Preference</a></li>
 							</ul>
 						</section>
@@ -78,17 +79,51 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getsortpreference" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Sort<wbr>Preference</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Sort<wbr>Preference<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types_.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="getsortdirection" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Sort<wbr>Direction</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Sort<wbr>Direction<span class="tsd-signature-symbol">(</span>sortType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types_.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Asc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Desc"</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/selectors/getSortPreference.ts#L6">src/selectors/getSortPreference.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/getSortPreference.ts#L10">src/selectors/getSortPreference.ts:10</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get sort direction if given sort type is not &#39;None&#39;.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sortType: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
+								</li>
+								<li>
+									<h5>context: <a href="_types_.html#context" class="tsd-signature-type">Context</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Asc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Desc"</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getsortpreference" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Sort<wbr>Preference</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Sort<wbr>Preference<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types_.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.sortpreference.html" class="tsd-signature-type">SortPreference</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/selectors/getSortPreference.ts#L20">src/selectors/getSortPreference.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -105,7 +140,7 @@
 									<h5>context: <a href="_types_.html#context" class="tsd-signature-type">Context</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types_.sortpreference.html" class="tsd-signature-type">SortPreference</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -126,6 +161,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="selectors.getsortpreference.html#getsortdirection" class="tsd-kind-icon">get<wbr>Sort<wbr>Direction</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="selectors.getsortpreference.html#getsortpreference" class="tsd-kind-icon">get<wbr>Sort<wbr>Preference</a>
 					</li>

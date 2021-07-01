@@ -70,6 +70,8 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="util.splitsentence.html#calculateremovefront" class="tsd-kind-icon">calculate<wbr>Remove<wbr>Front</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="util.splitsentence.html#isurl" class="tsd-kind-icon">is<wbr>Url</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util.splitsentence.html#splitsentence" class="tsd-kind-icon">split<wbr>Sentence</a></li>
 							</ul>
 						</section>
@@ -78,6 +80,91 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="calculateremovefront" class="tsd-anchor"></a>
+					<h3>calculate<wbr>Remove<wbr>Front</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">calculate<wbr>Remove<wbr>Front<span class="tsd-signature-symbol">(</span>str1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, matched<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/util/splitSentence.ts#L104">src/util/splitSentence.ts:104</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Function: calculateRemoveFront.
+										When it ends with .&#39; or .) or !) or ?&quot;) or ;), etc.
+										Spliting sentences will let those symbols sit on the front of the next sentence.
+									Hence, we calculate how many such characters needed to be removed and added back to the end of the previous sentence.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str1: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The previous sentence plus the previous spliter.</p>
+									</div>
+								</li>
+								<li>
+									<h5>s: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The current sentence, which doesn&#39;t include the current spliter.</p>
+									</div>
+								</li>
+								<li>
+									<h5>matched: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The array for the matched regular expression pattern.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>A number that indicates how many charcaters have to be moved to the previous sentence.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="isurl" class="tsd-anchor"></a>
+					<h3>is<wbr>Url</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Url<span class="tsd-signature-symbol">(</span>str1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/util/splitSentence.ts#L125">src/util/splitSentence.ts:125</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Function: isUrl.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str1: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The previous sentence plus the previous spliter.</p>
+									</div>
+								</li>
+								<li>
+									<h5>s: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The current sentence, which doesn&#39;t include the current spliter.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>A bolean that says whether the dot comes from a url.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="splitsentence" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> split<wbr>Sentence</h3>
@@ -88,7 +175,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/util/splitSentence.ts#L6">src/util/splitSentence.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/util/splitSentence.ts#L7">src/util/splitSentence.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -123,6 +210,12 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.splitsentence.html#calculateremovefront" class="tsd-kind-icon">calculate<wbr>Remove<wbr>Front</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.splitsentence.html#isurl" class="tsd-kind-icon">is<wbr>Url</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="util.splitsentence.html#splitsentence" class="tsd-kind-icon">split<wbr>Sentence</a>
 					</li>

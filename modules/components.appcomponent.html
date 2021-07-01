@@ -84,18 +84,18 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="components.appcomponent.html#content" class="tsd-kind-icon">Content</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="components.appcomponent.html#fontsizelocal" class="tsd-kind-icon">font<wbr>Size<wbr>Local</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="components.appcomponent.html#handlegestureend" class="tsd-kind-icon">handle<wbr>Gesture<wbr>End</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="components.appcomponent.html#handlegesturesegment" class="tsd-kind-icon">handle<wbr>Gesture<wbr>Segment</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="components.appcomponent.html#tutoriallocal" class="tsd-kind-icon">tutorial<wbr>Local</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.appcomponent.html#appcomponent" class="tsd-kind-icon">App<wbr>Component</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="components.appcomponent.html#appcomponent" class="tsd-kind-icon">App<wbr>Component</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.appcomponent.html#multigestureiftouch" class="tsd-kind-icon">Multi<wbr>Gesture<wbr>IfTouch</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.appcomponent.html#mapstatetoprops" class="tsd-kind-icon">map<wbr>State<wbr>ToProps</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.appcomponent.html#shouldcancelgesture" class="tsd-kind-icon">should<wbr>Cancel<wbr>Gesture</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -115,7 +115,7 @@
 					<div class="tsd-signature tsd-kind-icon">Props<span class="tsd-signature-symbol">:</span> <a href="../interfaces/components.appcomponent.stateprops.html" class="tsd-signature-type">StateProps</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/components.appcomponent.dispatchprops.html" class="tsd-signature-type">DispatchProps</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/AppComponent.tsx#L68">src/components/AppComponent.tsx:68</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/AppComponent.tsx#L75">src/components/AppComponent.tsx:75</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -128,64 +128,54 @@
 					<div class="tsd-signature tsd-kind-icon">Content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ExoticComponent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>_result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = React.lazy(() &#x3D;&gt; import(&#x27;./Content&#x27;))</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/AppComponent.tsx#L30">src/components/AppComponent.tsx:30</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="fontsizelocal" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> font<wbr>Size<wbr>Local</h3>
-					<div class="tsd-signature tsd-kind-icon">font<wbr>Size<wbr>Local<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = +(localStorage[&#x27;Settings/Font Size&#x27;] || 16)</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/AppComponent.tsx#L32">src/components/AppComponent.tsx:32</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/AppComponent.tsx#L34">src/components/AppComponent.tsx:34</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="handlegestureend" class="tsd-anchor"></a>
 					<h3>handle<wbr>Gesture<wbr>End</h3>
-					<div class="tsd-signature tsd-kind-icon">handle<wbr>Gesture<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span></div>
+					<div class="tsd-signature tsd-kind-icon">handle<wbr>Gesture<wbr>End<span class="tsd-signature-symbol">:</span> <a href="components.appcomponent.html#handlegestureend" class="tsd-signature-type">handleGestureEnd</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/AppComponent.tsx#L34">src/components/AppComponent.tsx:34</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/AppComponent.tsx#L37">src/components/AppComponent.tsx:37</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="handlegesturesegment" class="tsd-anchor"></a>
 					<h3>handle<wbr>Gesture<wbr>Segment</h3>
-					<div class="tsd-signature tsd-kind-icon">handle<wbr>Gesture<wbr>Segment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span></div>
+					<div class="tsd-signature tsd-kind-icon">handle<wbr>Gesture<wbr>Segment<span class="tsd-signature-symbol">:</span> <a href="components.appcomponent.html#handlegesturesegment" class="tsd-signature-type">handleGestureSegment</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/AppComponent.tsx#L34">src/components/AppComponent.tsx:34</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/AppComponent.tsx#L37">src/components/AppComponent.tsx:37</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="tutoriallocal" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> tutorial<wbr>Local</h3>
-					<div class="tsd-signature tsd-kind-icon">tutorial<wbr>Local<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = localStorage[&#x27;Settings/Tutorial&#x27;] &#x3D;&#x3D;&#x3D; &#x27;On&#x27;</span></div>
+					<div class="tsd-signature tsd-kind-icon">tutorial<wbr>Local<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = storage.getItem(&#x27;Settings/Tutorial&#x27;) &#x3D;&#x3D;&#x3D; &#x27;On&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/AppComponent.tsx#L33">src/components/AppComponent.tsx:33</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/AppComponent.tsx#L36">src/components/AppComponent.tsx:36</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="appcomponent" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> App<wbr>Component</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 						<li class="tsd-signature tsd-kind-icon">App<wbr>Component<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/components.appcomponent.stateprops.html" class="tsd-signature-type">StateProps</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/components.appcomponent.dispatchprops.html" class="tsd-signature-type">DispatchProps</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>children<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ReactNode</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/AppComponent.tsx#L80">src/components/AppComponent.tsx:80</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/AppComponent.tsx#L95">src/components/AppComponent.tsx:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -207,13 +197,13 @@
 					<a name="multigestureiftouch" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Multi<wbr>Gesture<wbr>IfTouch</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">Multi<wbr>Gesture<wbr>IfTouch<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactNodeArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactPortal</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
+						<li class="tsd-signature tsd-kind-icon">Multi<wbr>Gesture<wbr>IfTouch<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactNodeArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactPortal</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/AppComponent.tsx#L73">src/components/AppComponent.tsx:73</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/AppComponent.tsx#L83">src/components/AppComponent.tsx:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -224,10 +214,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <span class="tsd-signature-symbol">{ </span>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactNodeArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactPortal</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactNodeArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactPortal</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
-											<h5>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactNodeArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactPortal</span></h5>
+											<h5>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactNodeArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactPortal</span></h5>
 										</li>
 									</ul>
 								</li>
@@ -246,7 +236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/AppComponent.tsx#L51">src/components/AppComponent.tsx:51</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/AppComponent.tsx#L56">src/components/AppComponent.tsx:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -259,6 +249,28 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="shouldcancelgesture" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> should<wbr>Cancel<wbr>Gesture</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">should<wbr>Cancel<wbr>Gesture<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/AppComponent.tsx#L78">src/components/AppComponent.tsx:78</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Cancel gesture if there is an active text selection on active drag.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Object literals</h2>
@@ -268,7 +280,7 @@
 					<div class="tsd-signature tsd-kind-icon">map<wbr>Dispatch<wbr>ToProps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/AppComponent.tsx#L66">src/components/AppComponent.tsx:66</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/AppComponent.tsx#L73">src/components/AppComponent.tsx:73</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -277,7 +289,7 @@
 						<div class="tsd-signature tsd-kind-icon">update<wbr>Split<wbr>Pos<span class="tsd-signature-symbol">:</span> <a href="reducers.updatesplitposition.html#updatesplitposition" class="tsd-signature-type">updateSplitPosition</a><span class="tsd-signature-symbol"> = updateSplitPosition</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/components/AppComponent.tsx#L66">src/components/AppComponent.tsx:66</a></li>
+								<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/components/AppComponent.tsx#L73">src/components/AppComponent.tsx:73</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -312,9 +324,6 @@
 						<a href="components.appcomponent.html#content" class="tsd-kind-icon">Content</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="components.appcomponent.html#fontsizelocal" class="tsd-kind-icon">font<wbr>Size<wbr>Local</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.appcomponent.html#handlegestureend" class="tsd-kind-icon">handle<wbr>Gesture<wbr>End</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
@@ -323,7 +332,7 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.appcomponent.html#tutoriallocal" class="tsd-kind-icon">tutorial<wbr>Local</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="components.appcomponent.html#appcomponent" class="tsd-kind-icon">App<wbr>Component</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
@@ -331,6 +340,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.appcomponent.html#mapstatetoprops" class="tsd-kind-icon">map<wbr>State<wbr>ToProps</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="components.appcomponent.html#shouldcancelgesture" class="tsd-kind-icon">should<wbr>Cancel<wbr>Gesture</a>
 					</li>
 					<li class=" tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.appcomponent.html#mapdispatchtoprops" class="tsd-kind-icon">map<wbr>Dispatch<wbr>ToProps</a>

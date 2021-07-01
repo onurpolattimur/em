@@ -77,6 +77,7 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.importtext.html#regexstartswithclosedtag" class="tsd-kind-icon">regex<wbr>Starts<wbr>With<wbr>Closed<wbr>Tag</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.importtext.html#regexpleadingspacesandbullet" class="tsd-kind-icon">regexp<wbr>Leading<wbr>Spaces<wbr>And<wbr>Bullet</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.importtext.html#regexplistitem" class="tsd-kind-icon">regexp<wbr>List<wbr>Item</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.importtext.html#regexpplaintextbullet" class="tsd-kind-icon">regexp<wbr>Plaintext<wbr>Bullet</a></li>
 							</ul>
@@ -87,6 +88,9 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.importtext.html#blockstohtml" class="tsd-kind-icon">blocks<wbr>ToHtml</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.importtext.html#bodycontent" class="tsd-kind-icon">body<wbr>Content</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.importtext.html#importtext" class="tsd-kind-icon">import<wbr>Text</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.importtext.html#iscopiedfromapp" class="tsd-kind-icon">is<wbr>Copied<wbr>From<wbr>App</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.importtext.html#moveleadingspacestobeginning" class="tsd-kind-icon">move<wbr>Leading<wbr>Spaces<wbr>ToBeginning</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.importtext.html#parsebodycontent" class="tsd-kind-icon">parse<wbr>Body<wbr>Content</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.importtext.html#rawtexttohtml" class="tsd-kind-icon">raw<wbr>Text<wbr>ToHtml</a></li>
 							</ul>
 						</section>
@@ -101,7 +105,17 @@
 					<div class="tsd-signature tsd-kind-icon">regex<wbr>Starts<wbr>With<wbr>Closed<wbr>Tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /^&lt;([A-Z][A-Z0-9]*)\b[^&gt;]*&gt;(.*?)&lt;\/\1&gt;/ism</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/reducers/importText.ts#L21">src/reducers/importText.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/reducers/importText.ts#L24">src/reducers/importText.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="regexpleadingspacesandbullet" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> regexp<wbr>Leading<wbr>Spaces<wbr>And<wbr>Bullet</h3>
+					<div class="tsd-signature tsd-kind-icon">regexp<wbr>Leading<wbr>Spaces<wbr>And<wbr>Bullet<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /^\s*(?:[-—▪◦•]|\*\s)?/</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/reducers/importText.ts#L20">src/reducers/importText.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -111,7 +125,7 @@
 					<div class="tsd-signature tsd-kind-icon">regexp<wbr>List<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /&lt;li(?:\s|&gt;)/gmi</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/reducers/importText.ts#L14">src/reducers/importText.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/reducers/importText.ts#L15">src/reducers/importText.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -121,7 +135,7 @@
 					<div class="tsd-signature tsd-kind-icon">regexp<wbr>Plaintext<wbr>Bullet<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /^\s*(?:[-—▪◦•]|\*\s)/m</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/reducers/importText.ts#L17">src/reducers/importText.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/reducers/importText.ts#L18">src/reducers/importText.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -138,7 +152,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/reducers/importText.ts#L51">src/reducers/importText.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/reducers/importText.ts#L59">src/reducers/importText.ts:59</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -194,7 +208,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/reducers/importText.ts#L64">src/reducers/importText.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/reducers/importText.ts#L72">src/reducers/importText.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -216,13 +230,13 @@
 					<a name="importtext" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> import<wbr>Text</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">import<wbr>Text<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>lastUpdated<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types_.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"Timestamp"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>preventSetCursor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>rawDestValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>skipRoot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></li>
+						<li class="tsd-signature tsd-kind-icon">import<wbr>Text<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>lastUpdated<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types_.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"Timestamp"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>preventSetCursor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>rawDestValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>skipRoot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/reducers/importText.ts#L116">src/reducers/importText.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/reducers/importText.ts#L149">src/reducers/importText.ts:149</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -236,13 +250,13 @@
 									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>options: <span class="tsd-signature-symbol">{ </span>lastUpdated<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types_.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"Timestamp"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>preventSetCursor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>rawDestValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>skipRoot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>lastUpdated<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types_.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"Timestamp"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>preventSetCursor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>rawDestValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>skipRoot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>last<wbr>Updated<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types_.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"Timestamp"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></h5>
 										</li>
 										<li class="tsd-parameter">
-											<h5>path<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></h5>
+											<h5>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></h5>
 										</li>
 										<li class="tsd-parameter">
 											<h5>prevent<wbr>Set<wbr>Cursor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
@@ -264,6 +278,97 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="iscopiedfromapp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Copied<wbr>From<wbr>App</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Copied<wbr>From<wbr>App<span class="tsd-signature-symbol">(</span>htmlText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/reducers/importText.ts#L29">src/reducers/importText.ts:29</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if clipboard data copied from an app such as (Webstorm, Notes, Notion..).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>htmlText: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="moveleadingspacestobeginning" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> move<wbr>Leading<wbr>Spaces<wbr>ToBeginning</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">move<wbr>Leading<wbr>Spaces<wbr>ToBeginning<span class="tsd-signature-symbol">(</span>line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/reducers/importText.ts#L85">src/reducers/importText.ts:85</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Move leading spaces and bullet indicator to the beginning.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><b>  - B</b>
+											to
+										-<b> B</b></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>line: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="parsebodycontent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> parse<wbr>Body<wbr>Content</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Body<wbr>Content<span class="tsd-signature-symbol">(</span>html<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/reducers/importText.ts#L97">src/reducers/importText.ts:97</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Parse html body content.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>html: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 					<a name="rawtexttohtml" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> raw<wbr>Text<wbr>ToHtml</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
@@ -273,7 +378,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/reducers/importText.ts#L78">src/reducers/importText.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/reducers/importText.ts#L111">src/reducers/importText.ts:111</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -315,6 +420,9 @@
 						<a href="reducers.importtext.html#regexstartswithclosedtag" class="tsd-kind-icon">regex<wbr>Starts<wbr>With<wbr>Closed<wbr>Tag</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="reducers.importtext.html#regexpleadingspacesandbullet" class="tsd-kind-icon">regexp<wbr>Leading<wbr>Spaces<wbr>And<wbr>Bullet</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="reducers.importtext.html#regexplistitem" class="tsd-kind-icon">regexp<wbr>List<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
@@ -328,6 +436,15 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="reducers.importtext.html#importtext" class="tsd-kind-icon">import<wbr>Text</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="reducers.importtext.html#iscopiedfromapp" class="tsd-kind-icon">is<wbr>Copied<wbr>From<wbr>App</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="reducers.importtext.html#moveleadingspacestobeginning" class="tsd-kind-icon">move<wbr>Leading<wbr>Spaces<wbr>ToBeginning</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="reducers.importtext.html#parsebodycontent" class="tsd-kind-icon">parse<wbr>Body<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="reducers.importtext.html#rawtexttohtml" class="tsd-kind-icon">raw<wbr>Text<wbr>ToHtml</a>

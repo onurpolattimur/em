@@ -76,10 +76,10 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.strip.html#regexalltags" class="tsd-kind-icon">regex<wbr>All<wbr>Tags</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.strip.html#regexbrtag" class="tsd-kind-icon">regex<wbr>BrTag</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.strip.html#regexdecimalspace" class="tsd-kind-icon">regex<wbr>Decimal<wbr>Space</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.strip.html#regexnbsp" class="tsd-kind-icon">regex<wbr>Nbsp</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.strip.html#regexpreserveformattingtags" class="tsd-kind-icon">regex<wbr>Preserve<wbr>Formatting<wbr>Tags</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.strip.html#regextagandattributes" class="tsd-kind-icon">regex<wbr>Tag<wbr>And<wbr>Attributes</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.strip.html#regexspantagonlycontainswhitespaces" class="tsd-kind-icon">regex<wbr>Span<wbr>Tag<wbr>Only<wbr>Contains<wbr>Whitespaces</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -99,7 +99,7 @@
 					<div class="tsd-signature tsd-kind-icon">Strip<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>preserveFormatting<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>preventTrim<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/util/strip.ts#L6">src/util/strip.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/util/strip.ts#L8">src/util/strip.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -118,12 +118,22 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="regexalltags" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> regex<wbr>All<wbr>Tags</h3>
-					<div class="tsd-signature tsd-kind-icon">regex<wbr>All<wbr>Tags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /&lt;(?:.|\n)*?&gt;/gmi</span></div>
+					<a name="regexbrtag" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> regex<wbr>BrTag</h3>
+					<div class="tsd-signature tsd-kind-icon">regex<wbr>BrTag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /&lt;br.*?&gt;/gmi</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/util/strip.ts#L1">src/util/strip.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/util/strip.ts#L7">src/util/strip.ts:7</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="regexdecimalspace" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> regex<wbr>Decimal<wbr>Space</h3>
+					<div class="tsd-signature tsd-kind-icon">regex<wbr>Decimal<wbr>Space<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /&amp;#32;/gmi</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/util/strip.ts#L6">src/util/strip.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -133,27 +143,17 @@
 					<div class="tsd-signature tsd-kind-icon">regex<wbr>Nbsp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /&amp;nbsp;/gmi</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/util/strip.ts#L4">src/util/strip.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/util/strip.ts#L5">src/util/strip.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="regexpreserveformattingtags" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> regex<wbr>Preserve<wbr>Formatting<wbr>Tags</h3>
-					<div class="tsd-signature tsd-kind-icon">regex<wbr>Preserve<wbr>Formatting<wbr>Tags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /&lt;(?!\/?(b|i|u|em|strong)(?: (?:.|\n)*)?&gt;)(?:.|\n)*?&gt;/gmi</span></div>
+					<a name="regexspantagonlycontainswhitespaces" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> regex<wbr>Span<wbr>Tag<wbr>Only<wbr>Contains<wbr>Whitespaces</h3>
+					<div class="tsd-signature tsd-kind-icon">regex<wbr>Span<wbr>Tag<wbr>Only<wbr>Contains<wbr>Whitespaces<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /&lt;span[^&gt;]*&gt;([\s]+)&lt;\/span&gt;/gmi</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/util/strip.ts#L2">src/util/strip.ts:2</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="regextagandattributes" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> regex<wbr>Tag<wbr>And<wbr>Attributes</h3>
-					<div class="tsd-signature tsd-kind-icon">regex<wbr>Tag<wbr>And<wbr>Attributes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /&lt;(?![/])(?:(\w*)((?:.|\n)*?))\/?&gt;/gmi</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/util/strip.ts#L3">src/util/strip.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/util/strip.ts#L10">src/util/strip.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -170,12 +170,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/util/strip.ts#L9">src/util/strip.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/util/strip.ts#L13">src/util/strip.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Strip HTML tags, convert nbsp to normal spaces, and trim.</p>
+									<p>Strip HTML tags, close incomplete html tags, convert nbsp to normal spaces, and trim.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -220,16 +220,16 @@
 						<a href="util.strip.html#stripoptions" class="tsd-kind-icon">Strip<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="util.strip.html#regexalltags" class="tsd-kind-icon">regex<wbr>All<wbr>Tags</a>
+						<a href="util.strip.html#regexbrtag" class="tsd-kind-icon">regex<wbr>BrTag</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.strip.html#regexdecimalspace" class="tsd-kind-icon">regex<wbr>Decimal<wbr>Space</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="util.strip.html#regexnbsp" class="tsd-kind-icon">regex<wbr>Nbsp</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="util.strip.html#regexpreserveformattingtags" class="tsd-kind-icon">regex<wbr>Preserve<wbr>Formatting<wbr>Tags</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="util.strip.html#regextagandattributes" class="tsd-kind-icon">regex<wbr>Tag<wbr>And<wbr>Attributes</a>
+						<a href="util.strip.html#regexspantagonlycontainswhitespaces" class="tsd-kind-icon">regex<wbr>Span<wbr>Tag<wbr>Only<wbr>Contains<wbr>Whitespaces</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="util.strip.html#strip" class="tsd-kind-icon">strip</a>

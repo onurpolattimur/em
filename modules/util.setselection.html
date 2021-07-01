@@ -90,7 +90,7 @@
 					<div class="tsd-signature tsd-kind-icon">Selection<wbr>Options<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>end<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/util/setSelection.ts#L1">src/util/setSelection.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/util/setSelection.ts#L1">src/util/setSelection.ts:1</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -112,39 +112,39 @@
 					<a name="setselection" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> set<wbr>Selection</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Selection<span class="tsd-signature-symbol">(</span>el<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>offset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Selection<span class="tsd-signature-symbol">(</span>focusNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Node</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>offset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e2c66a7/src/util/setSelection.ts#L13">src/util/setSelection.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/onurpolattimur/em/blob/9698eff/src/util/setSelection.ts#L13">src/util/setSelection.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Set the selection to the end of the given element. Inserts empty text node when element has no children.
+									<p>Set the selection at the desired offset on the given node. Inserts empty text node when element has no children.
 									NOTE: asyncFocus() needs to be called on mobile before setSelection and before any asynchronous effects that call setSelection.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>el: <span class="tsd-signature-type">HTMLElement</span></h5>
+									<h5>focusNode: <span class="tsd-signature-type">Node</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The input or contenteditable element to select.</p>
+											<p>The node that needs to be focused on.</p>
 										</div>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>offset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = { offset: 0, end: false }</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>offset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = { offset: 0, end: false }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
-											<h5>end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+											<h5>end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
 										</li>
 										<li class="tsd-parameter">
-											<h5>offset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+											<h5>offset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 										</li>
 									</ul>
 								</li>
